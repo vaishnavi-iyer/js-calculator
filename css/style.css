@@ -1,0 +1,103 @@
+
+.calc-bg{
+  position: relative;
+  width: 300px;
+  height: 423px;
+  margin: 0px 0;
+  padding: 20px;
+  background: #feff49;
+  //background: linear-gradient(#6b706b, #383B38); /* Standard syntax */
+  border-radius: 90% / 10%; //increased this to reduce the top and the bottom curve
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+  box-shadow: red(color);
+  float: left;
+}
+.calc-bg:before {
+  content: '';
+  //position: absolute; //to give a calc shape unlike a tv shape for button
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+  box-shadow: inherit;
+}
+
+.display{
+  position: relative; // same width as the calc outter body except the padding
+  width: inherit;
+  height: 60px;
+  background: #ede6c9;
+  border-radius: 5%;
+}
+
+#displayString {
+  position: relative;
+  width: inherit;
+  line-height: 25px;
+  text-align: right;
+  padding: 0 10px;
+}
+#result{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: inherit;
+  line-height: 35px;
+  font-size: 1.7em;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.keypad{
+  width: inherit;
+}
+
+.column, .column-first, .column-last{
+  float: left;
+  margin: 0px 10px;
+}
+
+.column-first{
+  margin-left: 0px;
+}
+
+.column-last{
+  margin-right: 0px;
+}
+
+.button-design {
+  position: relative;
+  width: 60px;
+  height: 45px;  //if you change this, change the line-height for the number class
+  margin: 6px 0;
+  background: #393C39;
+  background: linear-gradient(#6b706b, #383B38); /* Standard syntax */
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  text-indent: .1em;
+}
+.button-design:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+.number, .operator, .other, .decimal{
+  position: relative; // to make the number display on top on the button;
+  line-height: 45px;  //making line heigt equal to button height to middle align the text vertically
+  color: white;
+  font-weight: 20;
+  text-align: center;
+}
+
+
